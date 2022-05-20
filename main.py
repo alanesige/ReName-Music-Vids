@@ -54,12 +54,12 @@ def awesome():
 
                 Video_File = os.path.join(txt, filename)
                 print(Video_File)
-                new_filename = newfilename = re.sub("FHR|1080p|y2mate\.com - |audio|youtube|official|music|video|\(|\)|\[|\]|\,|\/|\\|_|lyric|SMS|TO 811 FOR SKIZA|([0-9]{5,20})|directed by cole bennett", "", filename, flags=re.IGNORECASE)
+                new_filename = re.sub("FHR|1080p|y2mate\.com|audio|youtube|official|music|video|\[|\]|\,|\/|\\|\_|lyric|SMS|TO 811 FOR SKIZA|([0-9]{5,20})|directed by cole bennett|(\(\d.*\))|(\()|(\))|^(\-)|(\-)$|(\_)$|^([ ]{0,})|([ ]{0,})$|((\_).([ ]{0,}))$", "", filename, flags=re.IGNORECASE)
                 print(new_filename)
                 os.rename(os.path.join(txt,filename), os.path.join(txt,new_filename))
-     esige.messagebox.showinfo("Renaming Completed.")           
-
-
+                
+             
+     #esige.messagebox.showinfo("Hurray!","Renaming Completed.")
 
     
 browse_text = esige.StringVar()
