@@ -24,12 +24,12 @@ def get_sporty_nigga(new_filenamers):
             #print("Name Finder Launched...")
             try:
 
-                        cid = '97cf2912ca234a618e0268d8121aebb1'
-                        secret = '45fedf8de40045298fb24b596aee01fc'
+                        cid = ''
+                        secret = ''
                         #Authentication - without user
 
-                        sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='97cf2912ca234a618e0268d8121aebb1',
-                                                                    client_secret='45fedf8de40045298fb24b596aee01fc',
+                        sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='',
+                                                                    client_secret='',
                                                                     redirect_uri="http://localhost:8888/callback")) 
 
                         song = new_filenamers
