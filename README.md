@@ -10,3 +10,4 @@ i.e remove off tags like: official video
  
  Currently only works with folders for a single music, fkn do it yourself.
                             
+Added functionality: Now searches Spotify and uses spotify names for downloaded music [ atleast for songs in spotify]
